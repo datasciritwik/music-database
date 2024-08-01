@@ -2,20 +2,20 @@
 
 ## Project Overview
 
-Music Insights Analyzer is an SQL-based analytical project designed to provide deep insights into customer behavior, sales trends, and musical preferences within a music store's database. The project leverages various SQL queries to extract and analyze data, offering valuable information to optimize marketing strategies, understand customer dynamics, and enhance business intelligence in the music industry.
+Music Insights Analyzer is an SQL-based analytical project designed to provide deep insights into customer behaviour, sales trends, and musical preferences within a music store's database. The project leverages various SQL queries to extract and analyze data, offering valuable information to optimize marketing strategies, understand customer dynamics, and enhance business intelligence in the music industry.
 
 ## Features
 
 - **Senior Employee Identification**: Identify the senior-most employee based on job title levels.
-- **Top Invoicing Countries**: Determine the countries with the highest number of invoices, focusing on the top three.
-- **Top Invoice Values**: Retrieve and analyze the highest invoice values.
+- **Top Invoicing Countries**: Determine the countries with the most invoices, focusing on the top three.
+- **Top Invoice Values**: Retrieve and analyze the highest.
 - **Best Customer Cities**: Identify the city generating the highest total invoice amounts for targeted promotional events.
-- **Best Customers by Name**: List top customers by total spending, including their full names and billing cities.
-- **Rock Music Listener Profiles**: List email, first name, and last name of all rock music listeners, ordered alphabetically by email.
+Best Customers by Name: List the top customers by total spending, including their full names and billing cities.
+Rock Music Listener Profiles: List the email, first name, and last name of all rock music listeners, ordered alphabetically by email.
 - **Top Rock Artists**: Identify the top 10 artists by the number of rock tracks produced.
 - **Longer than Average Tracks**: List tracks that exceed the average song length, ordered by duration.
-- **Customer Spending on Top Artists**: Analyze customer spending on the top artist.
-- **Popular Music Genres by Country**: Identify the most popular music genres in each country by purchase amount.
+- **Customer Spending on Top Artists**: Analyze customer spending on the top artists.
+Popular Music Genres by Country: Identify the most popular music genres in each country by purchase amount.
 - **Top Spending Customers by Country**: Find the top spending customer in each country, including cases where multiple customers share the top spending amount.
 
 ## Queries Used
@@ -86,7 +86,7 @@ Music Insights Analyzer is an SQL-based analytical project designed to provide d
    ```
 
 8. **Longer than Average Tracks**
-   ```sql
+   ```SQL
    SELECT name, milliseconds 
    FROM track 
    WHERE milliseconds > (SELECT AVG(milliseconds) FROM track) 
@@ -148,15 +148,15 @@ Music Insights Analyzer is an SQL-based analytical project designed to provide d
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/music-insights-analyzer.git
-   cd music-insights-analyzer
+   git clone https://github.com/yourusername/music-database.git
+   cd music-database
    ```
 
 2. **Set Up the Database**:
-   - Ensure you have the required database set up with the relevant tables and data as indicated in the queries.
+   - Ensure you have the required database with the relevant tables and data as indicated in the queries.
 
 3. **Run the Queries**:
    - Use a SQL client or command line to execute the provided queries and analyze the results.
 
 
-Thanku for reading 🤗
+Thank for reading 🤗
